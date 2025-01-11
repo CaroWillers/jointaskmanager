@@ -295,10 +295,12 @@ body {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    text-decoration: none;
 }
 
 .navigation-item p {
     color: var(--menue-text);
+    text-decoration: none;
 }
 
 .navigation-item img {

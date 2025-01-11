@@ -60,28 +60,30 @@
     </div>
     <div class="main-container">
         <div class="navigation">
-            <div class="navigation-row" onclick="navigationClick()">
-                <div id="navSummary" class="navigation-item" onclick="summaryLoad()">
+            <div class="navigation-row">
+                <a href="#summary" id="navSummary" class="navigation-item">
                     <img class="unclicked" src="./img/summary icon gray.svg" alt="summary icon">
                     <img class="clicked d-none" src="./img/summary icon blue.svg" alt="summary icon">
                     <p>Summary</p>
-                </div>
-                <div id="navAddTask" class="navigation-item" onclick="loadAddTasks()">
+                </a>
+                <a href="#add-task" id="navAddTask" class="navigation-item">
                     <img class="unclicked" src="./img/task icon gray.svg" alt="task icon">
                     <img class="clicked d-none" src="./img/task icon blue.svg" alt="task icon">
                     <p>Add Task</p>
-                </div>
-                <div id="navBoard" class="navigation-item" onclick="loadBoard()">
+                </a>
+                <a href="#board" id="navBoard" class="navigation-item">
                     <img class="unclicked" src="./img/bord icon gray.svg" alt="board icon">
                     <img class="clicked d-none" src="./img/board icon blue.svg" alt="board icon">
                     <p>Board</p>
-                </div>
-                <div class="navigation-item" onclick="loadContacts()">
+                </a>
+                <a href="#contacts" id="navContacts" class="navigation-item">
                     <img class="unclicked" src="./img/contacts icon gray.svg" alt="contacts icon">
                     <img class="clicked d-none" src="./img/contacts icon blue.svg" alt="contacts icon">
                     <p>Contacts</p>
-                </div>
+                </a>
             </div>
+            
+                     
             <div class="navigation-legal" onclick="clickedLegalPart()">
                 <div id="navPrivacyPolicy" onclick="Templates('privacy_policy')">Privacy Policy</div>
                 <div id="navLegalNotice" onclick="Templates('legal_notice')">Legal Notice</div>

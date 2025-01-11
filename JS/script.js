@@ -422,3 +422,32 @@ function removeNavHighlightOnLogo() {
         })
     })
 }
+
+ // Überwacht Änderungen im Hash
+window.addEventListener('hashchange', handleHashChange);
+document.addEventListener('DOMContentLoaded', () => {
+    handleHashChange(); // Initial bei Seitenladen
+});
+
+// Funktion, die Inhalte basierend auf dem Hash lädt
+async function handleHashChange() {
+    const hash = window.location.hash || '#summary'; // Fallback zu #summary
+    switch (hash) {
+        case '#summary':
+            await summaryLoad(); 
+            break;
+        case '#add-task':
+            await loadAddTasks(); 
+            break;
+        case '#board':
+            await loadBoard(); 
+            break;
+        case '#contacts':
+            await loadContacts(); 
+            break;
+        default:
+            await summaryLoad(); 
+            break;
+    }
+}
+
